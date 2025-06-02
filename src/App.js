@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import IPOForm from './pages/IPOForm';
-import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/ipo-form" element={<IPOForm />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </Router>
   );
 }
-
 export default App;
