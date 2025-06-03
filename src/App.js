@@ -9,7 +9,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/ipo-form" element={<IPOForm />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
